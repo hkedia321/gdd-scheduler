@@ -1,0 +1,226 @@
+[
+	[
+		"Time",
+		"Description",
+		"_type",
+		"_track",
+		"_product"
+	],
+	[
+		"<div>All Day</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3>Google Developers and Cloud Certification Lounge</h3><div class='event-speakers-list'><h4></h4><div><em></em></div></div></header><p>Find out what's new in the Google Developers and Google Cloud Certification programs. Meet Android, Web, and Cloud experts, and learn how you can get certified.</p><footer class='events-tags'><div class='events-tags__product'></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Certification</p></div></footer>",
+		"Session",
+		"Certification",
+		""
+	],
+	[
+		"<div>08:00-10:00</div><div class='gdd-event-session-type'></div>",
+		"<header><h3>Breakfast and Registration</h3><div class='event-speakers-list'><h4></h4><div><em></em></div></div></header><p></p><footer class='events-tags'><div class='events-tags__product'></div><div class='events-tags__track-type'></div></footer>",
+		"",
+		"",
+		""
+	],
+	[
+		"<div>10:00-10:45</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Day 2 Keynote</h3><div class='event-speakers-list'><h4>Sowmya Subramania</h4><div><em>Hall 3a</em></div></div></header><p>Changing the world, one bit at a time.</p><footer class='events-tags'><div class='events-tags__product'></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p> <p class='devsite-event-type devsite-event-text'>Develop on Mobile</p> <p class='devsite-event-type devsite-event-text'>Mobile Web</p> <p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Session",
+		"Beyond Mobile Develop on Mobile Mobile Web Android",
+		""
+	],
+	[
+		"<div>11:00-11:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Building Production IoT Devices with Android Things</h3><div class='event-speakers-list'><h4>Wayne Piekarski</h4><div><em>Jacaranda Room</em></div></div></header><p>Android Things is Google's platform to build IoT products with the power and security of Android. Developers can use familiar tools such as Android Studio and the Android SDK to easily develop IoT software, and then scale the hardware from a single prototype into production. Anyone – from startups to large companies – can build commercial products at scale. This talk will explain the steps involved in implementing Google Things into your workflow.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android-things'>Android Things</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Session",
+		"Beyond Mobile",
+		"Android Things"
+	],
+	[
+		"<div>11:00-12:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>Integrating AMP into PWA</h3><div class='event-speakers-list'><h4>Sarah Clark</h4><div><em>Cassia Room</em></div></div></header><p>Accelerated Mobile Pages (AMP) are great for content-driven sites such as news sites and blogs. But, what if you want to build them into Progressive Web Apps? Come learn how to combine the speed of AMP with the offline power of Progressive Web Apps.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-pwa'>PWA</p> <p class='devsite-event-type devsite-event-amp'>AMP</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Mobile Web</p></div></footer>",
+		"Training",
+		"Mobile Web",
+		"PWA AMP"
+	],
+	[
+		"<div>11:00-12:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>TensorFlow for Poets 2: Optimize for Mobile</h3><div class='event-speakers-list'><h4>Kaz Sato</h4><div><em>Gulmohar Room</em></div></div></header><p>Portability is one of the benefits of TensorFlow. You can easily move the neural network model to Android and run the prediction inside mobile phones, to do many AI tricks things like image recognition, motion recognition and etc. But the challenges are the model size and CPU consumption. The models usually takes tens of megabytes, and also consumes CPU power for neural network prediction. In this session, we will discuss tips and tricks to overcome those challenges to bring the latest AI technology to production Android app.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-tensorflow'>TensorFlow</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Training",
+		"Beyond Mobile",
+		"TensorFlow"
+	],
+	[
+		"<div>11:45-12:15</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>PWA+AMP = Easy for Users and Developers Alike</h3><div class='event-speakers-list'><h4>Ben Morss</h4><div><em>Hall 3a</em></div></div></header><p>PWAs enable app-like experiences on mobile web. AMP makes the web fast for users and simple for developers. Put those together and you’ve got an easy way to build a fast, beautiful, immersive web app. You can fit existing AMP content into a PWA experience! Join us as we show you how to build a PWA/AMP without a single JavaScript framework.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-pwa'>PWA</p> <p class='devsite-event-type devsite-event-amp'>AMP</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Mobile Web</p></div></footer>",
+		"Session",
+		"Mobile Web",
+		"PWA AMP"
+	],
+	[
+		"<div>11:45-12:15</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Mobile in Context: Design Principles of Flow and Navigation </h3><div class='event-speakers-list'><h4>Jenny Gove</h4><div><em>Jacaranda Room</em></div></div></header><p>It’s an exciting time for the development of mobile web and app ecosystems. New technologies are advancing the experience that each can provide. Our design and development for mobile has to fit with users’ ways of working. The designs we create have to be intuitive and polished. New technologies can help us, but understanding user needs and creating inherently understandable experiences is fundamental. We’ll explore some principles around navigation and flow, and look at how incorporating user research improves mobile design.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-design'>Design</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Develop on Mobile</p></div></footer>",
+		"Session",
+		"Develop on Mobile",
+		"Design"
+	],
+	[
+		"<div>11:00-11:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3>Google Developers and Cloud Certification Information Session</h3><div class='event-speakers-list'><h4>JP Souchak, Manohar Silam</h4><div><em>Google Developers and Cloud Certification Lounge</em></div></div></header><p>Learn how to gain recognition for your skills as a Mobile Web Specialist, Associate Android Developer, Data Engineer, or Cloud Architect. In this session, JP Souchak and Manohar Silam will conduct a live information session presenting highlights of the two Certification programs and individual certifications. Q&A to follow, time permitting.</p><footer class='events-tags'><div class='events-tags__product'></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Certification</p></div></footer>",
+		"Session",
+		"Certification",
+		""
+	],
+	[
+		"<div>11:00-11:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Performance Tooling</h3><div class='event-speakers-list'><h4>Amrit Sanjeev</h4><div><em>Hall 3a</em></div></div></header><p>When measuring an app’s quality, user experience is paramount. Performance around battery drain, unresponsive or buggy UI, slow install speeds, and high RAM usage can all lead to a poor user experience – and negative reviews on the Play Store. In this talk, we’ll cover the new tools added to Android Studio and how they can be used to effectively improve your application.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android'>Android</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Session",
+		"Android",
+		"Android"
+	],
+	[
+		"<div>12:30-13:45</div><div class='gdd-event-session-type'></div>",
+		"<header><h3>Lunch</h3><div class='event-speakers-list'><h4></h4><div><em>Hall 3b - Sandbox</em></div></div></header><p></p><footer class='events-tags'><div class='events-tags__product'></div><div class='events-tags__track-type'></div></footer>",
+		"",
+		"",
+		""
+	],
+	[
+		"<div>12:30-13:00</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>What's New with the Google Assistant and Advanced Topics</h3><div class='event-speakers-list'><h4>Silvano Luciani</h4><div><em>Jacaranda Room</em></div></div></header><p>The Google Assistant supports many new advanced features. You can now implement payments, transactions, and location for shopping experiences, transfer the conversation to a different surface, and more. Support for Smart Home devices is now available, so you can integrate your own IoT devices. Come and learn what’s new with the Google Assistant platform and what advanced features you can implement.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-assistant'>Assistant</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Session",
+		"Beyond Mobile",
+		"Assistant"
+	],
+	[
+		"<div>13:10-14:40</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>Power Your Apps with Gmail, Drive, Calendar, Sheets, Slides, and More</h3><div class='event-speakers-list'><h4>Wesley Chun</h4><div><em>Cassia Room</em></div></div></header><p>You may be familiar with G Suite applications like Gmail, Google Drive, Calendar, Sheets, and Slides. But behind each of these apps that you know and love so well, there's a developer component. In this hands-on training session, we show you two different ways to programmatically access these apps and document data. You’ll get to work on two codelabs, and will leave with enough knowledge to get started on projects immediately.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-g-suite'>G Suite</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Training",
+		"Beyond Mobile",
+		"G Suite"
+	],
+	[
+		"<div>13:10-14:40</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>Taking Advantage of Kotlin in Your Android App</h3><div class='event-speakers-list'><h4>Sean McQuillan</h4><div><em>Gulmohar Room</em></div></div></header><p>In this training you'll get hands-on experience building Android apps using Android Studio in the Kotlin language. You'll learn how to leverage Kotlin to reduce boilerplate code, avoid common mistakes, and simplify your code by converting an existing Android app from the Java Programming Language to Kotlin.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android'>Android</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Training",
+		"Android",
+		"Android"
+	],
+	[
+		"<div>13:15-13:45</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Running in the Background</h3><div class='event-speakers-list'><h4>Nasir Khan</h4><div><em>Hall 3a</em></div></div></header><p>“Background” is an overloaded term in the Android world. It’s used to describe different things in different contexts including: running off the UI thread while your app is in foreground; running for a very short time after your app goes to the background; running for a short time on receipt of a high priority FCM data message; or running scheduled jobs. In this talk we will cover some best practices along with solutions for various use cases that will work today and in the future.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android'>Android</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Session",
+		"Android",
+		"Android"
+	],
+	[
+		"<div>14:00-14:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>From Website to Progressive Web App</h3><div class='event-speakers-list'><h4>Pete LePage</h4><div><em>Hall 3a</em></div></div></header><p>This talk will address where to start, what to implement, and how to prioritise Progressive Web App techniques.You'll also learn how to make the most of small changes that can make a big impact.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-pwa'>PWA</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Mobile Web</p></div></footer>",
+		"Session",
+		"Mobile Web",
+		"PWA"
+	],
+	[
+		"<div>14:00-14:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Google Cloud IoT Core Technical Deep Dive</h3><div class='event-speakers-list'><h4>Gus Class</h4><div><em>Jacaranda Room</em></div></div></header><p>In this talk you will hear about the high-level features of the Google Cloud IoT Core product. Learn how the underlying Google Cloud products that make up the Cloud Solution let you add IoT capabilities to your products at scale, for both data ingress and analytics. An end-to-end demonstration of the product will conclude the presentation.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-cloud'>Cloud</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Session",
+		"Beyond Mobile",
+		"Cloud"
+	],
+	[
+		"<div>14:40-15:10</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Android meets TensorFlow</h3><div class='event-speakers-list'><h4>Kaz Sato, Anitha Vijayakumar</h4><div><em>Hall 3a</em></div></div></header><p>TensorFlow is a multipurpose machine learning framework. TensorFlow can be used anywhere from training huge models across clusters in the cloud, to running models locally on an embedded system like your phone. In this training we will learn: how to train a custom image recognition model, how to optimize your model, how to compress your model, and how to run it in a pre-made Android app.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-tensorflow'>TensorFlow</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Develop on Mobile</p></div></footer>",
+		"Session",
+		"Develop on Mobile",
+		"TensorFlow"
+	],
+	[
+		"<div>14:50-16:20</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>Hands-on with the Google Cloud Vision and Natural Language APIs</h3><div class='event-speakers-list'><h4>Romin Irani</h4><div><em>Gulmohar Room</em></div></div></header><p>This instructor-led training will show step-by-step how to use both the Google Cloud Vision API as well as the Cloud Natural Language API. This will help attendees understand what it takes to enhance their applications or write new ones whilst leveraging the amazing capabilities of the Google Cloud machine learning APIs.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-cloud'>Cloud</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Develop on Mobile</p></div></footer>",
+		"Training",
+		"Develop on Mobile",
+		"Cloud"
+	],
+	[
+		"<div>14:50-17:50</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>Design Thinking Workshop</h3><div class='event-speakers-list'><h4>University Innovation Fellows</h4><div><em>Cassia Room</em></div></div></header><p>At Stanford d.school, we believe everyone has the capacity to be creative. We build on methods from across the field of design to create learning experiences that help people unlock their creative potential and apply it to the world. Design thinking is a methodology used by computer science, engineering and business professionals to solve complex problems, and find creative and desirable solutions. Don’t just watch from the sidelines – come give it a try. This hands-on, experiential design thinking workshop is going to be a fun and engaging experience with design thinking tools. This isn't a full cycle, faculty- led workshop, but rather a teaching team comprised of professionals from the Stanford d.school and University Innovation Fellows from across India.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-d-school-design'>D-School Design</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Training",
+		"Beyond Mobile",
+		"D-School Design"
+	],
+	[
+		"<div>14:40-15:10</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Building Rich Media Experiences with Android</h3><div class='event-speakers-list'><h4>Paul Saxman, Daniel Galpin</h4><div><em>Jacaranda Room</em></div></div></header><p>Great content is the foundation for a great media app, but a great user experience requires leveraging the right set of media and user-interface features on Android. In this talk, we’ll cover what it takes to build an outstanding media app experience using platform features such as the Android Media Framework, picture-in-picture, MediaStyle notifications, and the new Channels and Programs API on Android TV. We’ll also cover what’s new in high performance audio for Android when creating media creation apps.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android'>Android</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Session",
+		"Android",
+		"Android"
+	],
+	[
+		"<div>15:20-15:50</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Building an Android Instant App</h3><div class='event-speakers-list'><h4>Lyla Fujiwara, Anirudh Dewani</h4><div><em>Hall 3a</em></div></div></header><p>Users don't like to wait. By shrinking your APK size, they won't need to. Smaller APKs not only provide faster downloads for users, but the refactoring process often simplifies your codebase. This simplification process prepares your app for Android Instant Apps, which can be opened from URLs and provide a native app experience without the friction of a full install. In this talk, we'll cover the many tools available to cut down your APK size, modularize your app, and build your first Android Instant App.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android'>Android</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Session",
+		"Android",
+		"Android"
+	],
+	[
+		"<div>15:20-15:50</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Fundamentals of Google Cloud Platform: A Guided Tour</h3><div class='event-speakers-list'><h4>Marc Cohen, Mete Atamel</h4><div><em>Jacaranda Room</em></div></div></header><p>There's a lot to grok in cloud computing, and trying to understand it all can be daunting. In this session we'll walk you through a hands-on, practical guided tour of the amazing scope and depth of problems that can be solved with Google Cloud Platform.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-cloud'>Cloud</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Develop on Mobile</p></div></footer>",
+		"Session",
+		"Develop on Mobile",
+		"Cloud"
+	],
+	[
+		"<div>16:00-16:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Live Coding an App with Cloud Functions and Cloud Firestore for Firebase</h3><div class='event-speakers-list'><h4>Mike McDonald, Dan McGrath, Todd Burner</h4><div><em>Hall 3a</em></div></div></header><p>Together Firebase and Google Cloud Platform allow developers to build extraordinary mobile and web apps quickly. In this session we'll craft an app live on-stage and demonstrate how to create a great user experience using Firebase. We'll then extend this by calling into Cloud APIs without having to spin up servers or manage infrastructure. You’ll experience firsthand how easy it is to build with Firebase, and how easy it is to scale with Google Cloud Platform.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-firebase'>Firebase</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Develop on Mobile</p></div></footer>",
+		"Session",
+		"Develop on Mobile",
+		"Firebase"
+	],
+	[
+		"<div>16:00-16:30</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Internationalization and Structured Data for Search</h3><div class='event-speakers-list'><h4>Aaseesh Marina</h4><div><em>Jacaranda Room</em></div></div></header><p>When it comes to making a multilingual or international website work well in search, or adding structured data for search engines, there's more than meets the eye. This session will give you the critical insights.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-search'>Search</p> <p class='devsite-event-type devsite-event-structured-data'>Structured Data</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Mobile Web</p></div></footer>",
+		"Session",
+		"Mobile Web",
+		"Search Structured Data"
+	],
+	[
+		"<div>16:00-16:30</div><div class='gdd-event-session-type'></div>",
+		"<header><h3>Afternoon Break</h3><div class='event-speakers-list'><h4></h4><div><em></em></div></div></header><p></p><footer class='events-tags'><div class='events-tags__product'></div><div class='events-tags__track-type'></div></footer>",
+		"",
+		"",
+		""
+	],
+	[
+		"<div>16:40-17:10</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Serverless Computing with Firestore, Cloud Functions, and G Suite APIs</h3><div class='event-speakers-list'><h4>Patrick Martinent</h4><div><em>Jacaranda Room</em></div></div></header><p>This talk will introduce you to the new Cloud Firestore database recently announced by Google’s Firebase team.  After a quick intro to the Firebase platform, you will hear about some of the specific use cases and features that make Cloud Firestore an essential component of the platform. The second half of the talk will include a live demonstration of how easy it is to leverage G Suite APIs directly from Firebase Cloud Functions.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-g-suite'>G Suite</p> <p class='devsite-event-type devsite-event-cloud'>Cloud</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Session",
+		"Beyond Mobile",
+		"G Suite Cloud"
+	],
+	[
+		"<div>16:40-17:10</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>Polymer and Web Components</h3><div class='event-speakers-list'><h4>Taylor Savage</h4><div><em>Hall 3a</em></div></div></header><p>Web Components are a new technology baked into the web platform that let you create your own custom, fully-encapsulated HTML elements. Learn what Web Components are, what they let you do, and how you can use the Polymer library to build your own Web Components and apps that are lighter, faster, and use less data.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-pwa'>PWA</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Mobile Web</p></div></footer>",
+		"Session",
+		"Mobile Web",
+		"PWA"
+	],
+	[
+		"<div>16:20-17:50</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Training</p></div>",
+		"<header><h3>Deep Dive into Constraint Layout</h3><div class='event-speakers-list'><h4>Daniel Galpin</h4><div><em>Gulmohar Room</em></div></div></header><p>You really can use the layout editor within Android Studio 3.x to build flexible and efficient layouts for your Android apps. This training demonstrates how to take advantage of the latest Constraint Layout features, including barriers, ratios, and chains. We'll be providing a starter app so that you can quickly see your results in the emulator or on a device.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-android'>Android</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Android</p></div></footer>",
+		"Training",
+		"Android",
+		"Android"
+	],
+	[
+		"<div>17:20-17:50</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>The Power and Flexibility of the New Google Sheets API</h3><div class='event-speakers-list'><h4>Wesley Chun</h4><div><em>Jacaranda Room</em></div></div></header><p>In today's world of big data, spreadsheets are still as powerful and flexible as ever. Launched at Google I/O 2016, the Google Sheets API can do much more than any of its predecessors. In this talk, we'll demonstrate a wide variety of ways to interact with Sheets, including migrating data from SQL databases, modifying data, cell formatting, and much more. The demo code will be in Python and JSON for brevity. However, you can use any language supported by the Google APIs Client Libraries.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-g-suite'>G Suite</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Beyond Mobile</p></div></footer>",
+		"Session",
+		"Beyond Mobile",
+		"G Suite"
+	],
+	[
+		"<div>17:20-17:50</div><div class='gdd-event-session-type'><p class='devsite-event-type devsite-event-text'>Session</p></div>",
+		"<header><h3 class='devsite-livestream'>SEO: Common Issues and Misconceptions</h3><div class='event-speakers-list'><h4>Malik Mairaj Syed</h4><div><em>Hall 3a</em></div></div></header><p>Many websites often rely on traffic from web searches. In this session we'll cover common issues and misconceptions regarding search engine optimization (SEO), and tips on what to look out for when hiring someone else to do SEO.</p><footer class='events-tags'><div class='events-tags__product'><p class='devsite-event-type devsite-event-search'>Search</p></div><div class='events-tags__track-type'><p class='devsite-event-type devsite-event-text'>Mobile Web</p></div></footer>",
+		"Session",
+		"Mobile Web",
+		"Search"
+	]
+]

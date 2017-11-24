@@ -1,0 +1,761 @@
+/* Common event styles */
+@import url("/site-assets/styles/events.css");
+.devsite-background-grey :link .devsite-landing-row-item-list-item-description h4+p {
+  color: initial
+}
+.gdd-india--extended .devsite-event-map {
+  margin-top: -40px;
+}
+.gdd-india--extended .map-section {
+  padding-bottom: 0;
+}
+/* Confetti banners for each page */
+.gdd-india--register .devsite-background-google-green,
+.gdd-india--attending .devsite-background-google-yellow,
+.gdd-india--extended .devsite-background-google-red,
+.gdd-india--speakers .devsite-background-google-blue {
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+.gdd-india--register .devsite-background-google-green {
+  background-color: #34a853;
+  background-image: url(/events/gdd-india/images/banner/confetti.png);
+}
+
+.gdd-india--attending .devsite-background-google-yellow {
+  background-image: url(/events/gdd-india/images/banner/confetti-yellow.png);
+}
+.gdd-india--attending .devsite-landing-row-item-icon-background-google-yellow .devsite-landing-row-item-list-item-icon-container {
+  background-color: #f4b400;
+}
+.gdd-india--attending .devsite-landing-row.devsite-background-grey .devsite-landing-row-header h2 {
+  color: #f4b400;
+}
+.gdd-india--attending .devsite-landing-row-large-headings h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+h3#tell-a-friend {
+  color: #757575;
+}
+.gdd-india--attending .devsite-landing-row-item-list-item-icon-container {
+  height: 56px;
+  width: 56px;
+}
+.gdd-india--attending .devsite-landing-row-item-icon-background .devsite-landing-row-item-list-item-icon {
+  font-size: 36px;
+  height: 56px;
+  padding: 10px;
+  width: 56px;
+}
+
+/* There are multiple .devsite-backgrounds on these pages, causing this to
+ * target elements outside the intended target. */
+.gdd-india--extended .devsite-background-google-red {
+  background-image: url(/events/gdd-india/images/banner/confetti-red.png);
+}
+
+.gdd-india--speakers .devsite-background-google-blue {
+  background-color: #346df1;
+  background-image: url(/events/gdd-india/images/banner/confetti-blue.png);
+}
+
+.gdd-india--speakers .devsite-landing-row-item-description-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.gdd-india__force-pad {
+  padding-bottom: 40px !important;
+}
+
+p + .expandable {
+  margin-top: 40px;
+}
+
+.gdd-india__banner.devsite-landing-row {
+  background: -moz-linear-gradient(to right, #346df1 0%, #346df1 calc(10000px + (100% - 20000px)/3 - 27px), #f7f7f7 calc(10000px + (100% - 20000px)/3 - 27px));
+  background: -webkit-linear-gradient(to right, #346df1 0%,#346df1 calc(10000px + (100% - 20000px)/3 - 27px) ,#f7f7f7 calc(10000px + (100% - 20000px)/3 - 27px));
+  background: linear-gradient(to right, #346df1 0%, #346df1 calc(10000px + (100% - 20000px)/3 - 27px), #f7f7f7 calc(10000px + (100% - 20000px)/3 - 27px));
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.gdd-india__blue-icons .devsite-landing-row-item-icon-container {
+  background-color: #346df1
+}
+
+.gdd-india__banner .devsite-landing-row-group {
+  background-image: url(/events/gdd-india/images/banner/banner-confetti.png);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: top left;
+  padding: 150px 0;
+  position: relative;
+}
+
+.gdd-india__banner .devsite-landing-row-group::before {
+  background-image: url(/events/gdd-india/images/banner/banner-buildings.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: calc(100%/3 - 27px);
+}
+
+.gdd-india__banner .devsite-landing-row-item-image {
+  align-self: flex-end;
+  position: relative;
+  left: 5%;
+  flex: 1 1 100%;
+}
+/* Text classes */
+.gdd-india__small-text {
+  font-size: 14px;
+}
+.gdd-india__lh-small p {
+  margin: 5px 0;
+}
+h2.gdd-india__text-yellow {
+  color: #e09108;
+}
+.devsite-landing-row-item.gdd-india__row-item__centered-image {
+  justify-content: center;
+}
+.gdd-india__row-item__centered-image .devsite-landing-row-item-image {
+  background: transparent;
+}
+.devsite-landing-row-item.gdd-india__row-item__centered-image .devsite-landing-row-item-image {
+  margin: 0;
+}
+.devsite-landing-row-item.gdd-india__row-item__centered-image .devsite-landing-row-item-description {
+  display: none;
+}
+
+/* Prevents the footer from cramping while the charts load on /schedule */
+#devsite-events {
+  min-height: 500px
+}
+/* Forces filter scroll with longer lists. */
+.devsite-events-container .goog-menu.goog-menu-vertical {
+  max-height: 400px;
+  overflow: auto;
+}
+/** == Tags == */
+/* No color */
+.devsite-event-type {
+  border: 1px solid #e0e0e0;
+}
+
+/* Session type (keynote, etc) */
+.gdd-event-session-type .devsite-event-type.devsite-event-text {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Colored product tags - place the CSS generated from the automation here */
+/** Autogenerated CSS */
+.devsite-event-type.devsite-event-android {
+  background: #78c257;
+}
+
+.devsite-event-type.devsite-event-assistant {
+  background: #3f51b5;
+  color: #fff
+}
+
+.devsite-event-type.devsite-event-cloud {
+  background: #d84315;
+  color: #fff
+}
+
+.devsite-event-type.devsite-event-firebase {
+  background: #ffca28;
+}
+
+.devsite-event-type.devsite-event-tensorflow {
+  background: #ef6c00;
+  color: #fff
+}
+
+.devsite-event-type.devsite-event-mobile-web {
+  background: #fff;
+}
+
+.devsite-event-type.devsite-event-pwa {
+  background: #448AFF;
+  color: #fff
+}
+
+.devsite-event-type.devsite-event-amp {
+  background: #0277BD;
+  color: #fff
+}
+
+.devsite-event-type.devsite-event-android-things {
+  background: #1976D2;
+  color: #fff
+}
+
+.devsite-event-type.devsite-event-g-suite {
+  background: #757575;
+  color: #fff
+}
+/** End Autogenerated CSS */
+.devsite-event-type {
+  border-radius: 2px;
+  display: inline-block;
+  padding: 4px 8px;
+  white-space: nowrap;
+  margin-right: 5px !important;
+}
+/* Prevents time column from changing size when speaker description is short. */
+#devsite-events tr td:nth-of-type(1) {
+  width: 130px;
+}
+/* Charts renders fields meant for filtering only, hide them. */
+#devsite-events tr td:nth-child(n+3) {
+  display: none;
+}
+.gdd-agenda-table td:nth-child(1) {
+  font-weight: bold;
+}
+.gdd-agenda-table tbody tr {
+  background: unset;
+}
+/* Aligns top of the list of transportation icons to the sibling text */
+.gdd-india-attending-list .devsite-landing-row-item-list {
+  margin: 0;
+}
+
+/* Forces block display for speaker titles on mobile */
+@media only screen and (max-width: 768px) {
+  .devsite-events-row h3 + h4 {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .gdd-india__banner .devsite-landing-row-group {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gdd-india__banner .devsite-landing-row-group {
+    margin-left: -80px;
+    padding-left: 80px;
+  }
+
+  .gdd-india__banner .devsite-landing-row-group::before {
+    width: calc(100%/3 - 53px + 80px);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .gdd-india__banner.devsite-landing-row {
+    background: -moz-linear-gradient(to bottom, #346df1 0%, #346df1 230px, #f7f7f7 230px);
+    background: -webkit-linear-gradient(to bottom, #346df1 0%, #346df1 230px, #f7f7f7 230px);
+    background: linear-gradient(to bottom, #346df1 0%, #346df1 230px, #f7f7f7 230px);
+    padding-bottom: 40px;
+  }
+  .gdd-india__banner .devsite-landing-row-group {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+  .gdd-india__banner .devsite-landing-row-group::before {
+    background-position: bottom;
+    height: 230px;
+    left: -16px;
+    top: 0;
+    width: calc(100% + 32px);
+  }
+  .gdd-india__banner .gdd-india__hero-image {
+    height: 200px;
+  }
+  /* Tweaks the filters to fit better on small screens */
+  .devsite-events-legend-list {
+     margin-left: 0;
+  }
+  .devsite-events-filters {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: initial;
+  }
+}
+/* Hidden elements */
+.devsite-product-id-row,
+.devsite-rating-container {
+  display: none !important;
+}
+
+
+/* icon for Codelabs links in nav */
+.devsite-top-section a[href*="codelabs.developers.google.com"]::after {
+  font: normal normal normal 18px/1 'Material Icons';
+  font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  content: 'open_in_new';
+  position: relative;
+  text-rendering: optimizeLegibility;
+  top: 2px;
+  word-wrap: normal;
+}
+
+
+/* inline social media icons */
+.devsite-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px 0 8px;
+}
+
+.devsite-event-speaker .devsite-social-icons {
+  margin: auto 0 0;
+  padding: 16px 0 0;
+}
+
+.devsite-social-icon,
+.devsite-social-icon img {
+  height: 24px;
+  width: 24px;
+}
+
+.devsite-event-speaker .devsite-social-icon {
+  background: #4285f4;
+  border-radius: 50%;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+}
+
+.devsite-event-speaker .devsite-landing-row-item-description .devsite-social-icon:not(:first-child) {
+  margin-left: 8px;
+}
+
+.devsite-social-icon a {
+  display: block;
+}
+
+.devsite-social-icon a:hover img {
+  opacity: .75;
+}
+
+.devsite-landing-row-item-description .devsite-social-icon img {
+  margin: 0;
+  transition: opacity .2s;
+}
+
+.devsite-landing-row-item-description .devsite-social-icon:not(:first-child) {
+  margin-left: 16px;
+}
+
+/* Landing page maps */
+.devsite-event-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .devsite-event-map.devsite-event-map-full-bleed {
+    left: 0;
+    margin: 0 0 60px;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.devsite-event-map iframe {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/* events schedule */
+.devsite-events-legend-list,
+.devsite-events-legend-item {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.devsite-events-legend-list {
+  margin: 0 0 0 48px;
+  padding: 0;
+}
+
+.devsite-events-legend-item {
+  list-style: none;
+  margin: 0 16px 0 0;
+  padding: 0;
+}
+
+.devsite-events-legend-item::before {
+  border-radius: 50%;
+  content: '';
+  height: 16px;
+  margin-right: 8px;
+  width: 16px;
+}
+
+.devsite-legend-livestream::before {
+  background: #e62117;
+}
+
+.devsite-events-time-zone {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* container element for all filters */
+.devsite-events-filters {
+  background: rgba(236, 239, 241, .5);
+  color: rgba(0, 0, 0, .87);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+}
+
+/* hide filter controls elements */
+.devsite-events-filters .goog-combobox-button,
+.devsite-events-filters .google-visualization-controls-label {
+  display: none;
+}
+
+.devsite-events-filters-label,
+.devsite-events-filters input[type="text"],
+.devsite-events-filters .goog-menuitem {
+  font-size: 14px;
+}
+
+.devsite-events-filters-label {
+  margin: 0 16px 0 auto;
+}
+
+.devsite-events-filters input[type="text"] {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  line-height: 24px;
+  padding: 0;
+}
+
+.devsite-events-filters input[type="text"]:focus {
+  padding-bottom: 0;
+}
+
+.devsite-events-filters .goog-combobox {
+  display: block;
+  position: relative;
+}
+
+.devsite-events-filters .goog-combobox::after {
+  content: 'arrow_drop_down';
+  font: normal normal normal 24px/1 'Material Icons';
+  font-feature-settings: 'liga';
+  /* @alternate */ -moz-osx-font-smoothing: grayscale;
+  /* @alternate */ -webkit-font-smoothing: antialiased;
+  position: absolute;
+  right: 0;
+  text-rendering: optimizeLegibility;
+  word-wrap: normal;
+}
+
+.devsite-events-filters .goog-menu {
+  background: #fff;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, .15);
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.devsite-events-filters .goog-menuitem {
+  cursor: pointer;
+  line-height: 38px;
+  padding: 0 11px;
+}
+
+
+/* hide the header row */
+.devsite-events-header-row {
+  display: none;
+}
+
+/* remove default background color from all rows */
+#devsite-events tr {
+  background: 0;
+}
+
+/* column for each event's time */
+#devsite-events tr td:nth-of-type(1) {
+  color: #757575;
+  font: 400 18px/28px Roboto, sans-serif;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/*
+ * event headings:
+ * 'h3' time, title
+ * 'h4' speaker
+ */
+#devsite-events h3,
+#devsite-events h4 {
+  display: inline;
+  font: 400 18px/28px Roboto, sans-serif;
+  margin: 0;
+}
+
+#devsite-events h3 {
+  margin-right: 24px;
+}
+
+#devsite-events h4,
+.devsite-events-chart small {
+  color: #757575;
+}
+
+#devsite-events td p {
+  margin: 8px 0;
+}
+
+/* column for event type (e.g. 'presentation', 'codelab') */
+#devsite-events tr td:nth-of-type(3) {
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* event types */
+.devsite-event-codelab,
+.devsite-event-presentation,
+.devsite-event-question-answer,
+.devsite-event-registration,
+.devsite-event-social {
+  border-radius: 2px;
+  display: inline-block;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+.devsite-event-codelab {
+  background: #ce93d8;
+}
+
+.devsite-event-presentation {
+  background: #f8bbd0;
+}
+
+.devsite-event-question-answer {
+  background: #ff8a65;
+}
+
+.devsite-event-registration {
+  background: #80cbc4;
+}
+
+.devsite-event-social {
+  background: #fff176;
+}
+
+/* LiveStream icon */
+.devsite-livestream::before {
+  background: #e62117;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  margin: 0 8px 0 0;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
+
+/* FAQ */
+.expandable {
+  border-bottom: 1px solid #ebebeb;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+}
+
+.expand-control {
+  color: rgba(0, 0, 0, .54); /* Update color value */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-right: 24px;
+}
+
+.expand-control:not(button):not(.button) {
+  color: #757575;
+}
+
+.expand-control::after {
+  content: 'keyboard_arrow_down';
+  font: normal normal normal 24px/1 'Material Icons';
+  font-feature-settings: 'liga';
+  /* @alternate */ -moz-osx-font-smoothing: grayscale;
+  /* @alternate */ -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  position: absolute;
+  right: 0;
+  word-wrap: normal;
+}
+
+.expand-control.exw-expanded::after {
+  content: 'keyboard_arrow_up';
+}
+
+/* Styles for /events/ */
+.devsite-events .devsite-background-grey:not(.devsite-landing-row-cards) h3 {
+  color: #039be5;
+  margin-bottom: 0;
+}
+
+.devsite-events .devsite-events-filters {
+  background: #dfe1e5;
+}
+
+.devsite-events--upcoming-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.devsite-events--upcoming-details .material-icons {
+  color: #757575;
+}
+
+.devsite-events--upcoming-details li:nth-child(2) {
+  margin: 8px 40px;
+}
+
+/* Filter dropdowns to be side by side instead of stacked */
+.devsite-events-filter-horizontal .devsite-events-container {
+  display: flex;
+}
+
+.devsite-events-chart .devsite-events-row {
+  background: none;
+  border: unset;
+}
+
+.devsite-events-chart .devsite-events-row td {
+  background: transparent;
+  color: #757575;
+  font-size: 18px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+.devsite-events-chart td:last-of-type {
+  display: none;
+}
+
+.devsite-events-chart td:nth-last-child(2) {
+  padding-right: 22px;
+  text-align: right;
+}
+
+.devsite-events-chart .google-visualization-table-table thead {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .devsite-events .devsite-landing-row:not(.devsite-landing-row-logos) .devsite-landing-row-item-image-left {
+    order: 1;
+  }
+
+  .devsite-events .devsite-landing-row-67 .devsite-landing-row-item-description {
+    margin: 0 0 0 40px;
+  }
+
+  .devsite-events-chart .devsite-events-row td {
+    font-size: 14px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .devsite-events--upcoming-details li:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .devsite-events--upcoming-details {
+    flex-direction: column;
+  }
+
+  .devsite-events-filters.devsite-events-filter-horizontal {
+    flex-wrap: wrap;
+  }
+
+  .devsite-events-filters-note {
+    width: 100%;
+  }
+
+  .devsite-events-filters-label {
+    margin: 0;
+  }
+
+  .devsite-events-filter-horizontal .devsite-events-container {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .devsite-events-chart > .devsite-landing-row-group {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .devsite-events .devsite-landing-row-67 .devsite-landing-row-item-description {
+    margin: 0;
+  }
+
+  .devsite-events-filter-horizontal .devsite-events-container {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .devsite-events-filter {
+    margin: 10px 0;
+  }
+}
