@@ -15,6 +15,7 @@
     display: flex;
     text-align: center;
     align-items:center;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 .day-span{
     vertical-align: middle;
@@ -86,9 +87,6 @@ overflow: auto;
     font-size: large;
     color: rgba(0, 0, 0, 0.54);
 }
-.navText:hover , .dayHead:hover{
-    color: #000;
-}
 .navPara{
     margin:0 20px;
 }
@@ -112,5 +110,3 @@ overflow: auto;
     text-decoration: none;
     font-size: 17px;
 }
-
-

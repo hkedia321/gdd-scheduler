@@ -4,7 +4,7 @@
     left:0px;
     display: block;
     width:100%;
-    bottom: 0px;
+    bottom: -1px;
 }
 .toolbar-hide{
     /*bottom: -100px;*/

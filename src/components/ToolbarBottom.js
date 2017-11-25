@@ -20,6 +20,9 @@ class ToolbarBottom extends Component {
             toolbar:{
                 backgroundColor: "#212121",
                 color:"#fff"
+            },
+            separator:{
+                backgroundColor:"#ccc",
             }
         }
         return (
@@ -27,9 +30,13 @@ class ToolbarBottom extends Component {
                 <Toolbar style={styles.toolbar}>
                     <ToolbarGroup>
                         <img src="/images/gdd-logo.svg" alt=""/>
-                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
                         <ToolbarTitle text="GDD Scheduler" style={{color:"#fff"}}/>
-                        <ToolbarSeparator />
+                        <ToolbarSeparator style={styles.separator} />
+                        &nbsp;&nbsp;&nbsp;
+                        You are Attending {this.props.countSessions?this.props.countSessions:"0"} Sessions and {this.props.countTrainings?this.props.countTrainings:"0"} Trainings
+                        <ToolbarSeparator style={styles.separator} />
+
                         <RaisedButton label="Download PDF" onClick={this.props.handleDownloadPdf} primary={true} />
 
                     </ToolbarGroup>

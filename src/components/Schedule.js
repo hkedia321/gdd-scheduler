@@ -21,6 +21,7 @@ import {
 } from 'material-ui/Table';
 import Paper from 'material-ui/Paper';
 import Checkbox from 'material-ui/Checkbox';
+import $ from 'jquery';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
@@ -41,6 +42,10 @@ class Home extends Component {
             SelectAllChecked1:false,
             SelectAllChecked2:false,
             value:null,
+            countSessions1:0,
+            countTrainings1:0,
+            countSessions2:0,
+            countTrainings2:0,
         }
     }
     handleDayChange = (day) =>{
@@ -56,28 +61,38 @@ class Home extends Component {
         var response_day2=[];
         for(var i=1;i<responseDay2.length;i++){
             var ele=responseDay2[i];
+            var temp_e=$(ele[0]);
+            var session_training=$(".devsite-event-text",temp_e).text();
             var obj={
                 id:i-1,
                 selected:false,
                 timeColumn:ele[0],
                 describeColumn:ele[1],
                 session:ele[2],
-                keywords1:ele[3],
-                keywords2:ele[4],
+                tracks:ele[3],
+                products:ele[4],
+                hideFromType:false,
+                hideFromTrack:false,
+                hideFromProduct:false,
             }
             response_day2.push(obj);
         }
         var response_day1=[];
         for(var i=1;i<responseDay1.length;i++){
             var ele=responseDay1[i];
+            var temp_e=$(ele[0]);
+            var session_training=$(".devsite-event-text",temp_e).text();
             var obj={
                 id:i-1,
                 selected:false,
                 timeColumn:ele[0],
                 describeColumn:ele[1],
                 session:ele[2],
-                keywords1:ele[3],
-                keywords2:ele[4],
+                tracks:ele[3],
+                products:ele[4],
+                hideFromType:false,
+                hideFromTrack:false,
+                hideFromProduct:false,
             }
             response_day1.push(obj);
         }
@@ -112,12 +127,10 @@ class Home extends Component {
         console.log(arr);
         if(this.state.day===2){
             response=this.state.response_day2;
-            if(arr!=="all")
             this.resetSelections(2);
         }
         if(this.state.day===1){
             response=this.state.response_day1;
-            if(arr!=="all")
             this.resetSelections(1);
         }
         if(arr==="all"){
@@ -143,7 +156,6 @@ class Home extends Component {
             }
             else{
                 SelectAllChecked=false;
-                this.setState({arrSelected});
                 arr="none";
             }
             if(this.state.day===1)
@@ -169,11 +181,94 @@ class Home extends Component {
             this.setState({
                 showToolbarBottom:false
             });
+            if(this.state.day===1){
+                this.setState({arrSelected1:[]});
+            }
+            if(this.state.day===2){
+                this.setState({arrSelected2:[]});
+            }
         }
+
         else{
             this.setState({
                 showToolbarBottom:true
             });
+        }
+        if(this.state.day===2){
+            this.setState({
+                response_day2:response
+            },()=>{
+                this.setCount();
+            });
+        }
+        if(this.state.day===1){
+            this.setState({
+                response_day1:response
+            },()=>{
+                this.setCount();
+            });
+        }
+
+    }
+    setCount=()=>{
+        let session=0,training=0;
+        for(let i=0;i<this.state.response_day1.length;i++){
+            console.log(this.state.response_day1[i])
+            if(this.state.response_day1[i].selected===true){
+                if(this.state.response_day1[i].session==="Session")
+                session++;
+                else if(this.state.response_day1[i].session==="Training")
+                training++;
+            }
+        }
+        this.setState({
+            countSessions1:session,
+            countTrainings1:training
+        })
+        session=0;
+        training=0;
+        for(let i=0;i<this.state.response_day2.length;i++){
+            if(this.state.response_day2[i].selected===true){
+                if(this.state.response_day2[i].session==="Session")
+                session++;
+                else if(this.state.response_day2[i].session==="Training")
+                training++;
+            }
+        }
+        this.setState({
+            countSessions2:session,
+            countTrainings2:training
+        });
+    }
+    handleChangeType= (event, index, value)=>{
+        var response=this.state.response_day1;
+        if(this.state.day===2){
+            response=this.state.response_day2;
+        }
+        if(value==="Sessions"){//Sessions
+            for(let i =0;i<response.length;i++){
+                if(response[i].session!=="Session"){
+                    response[i].hideFromType=true;
+                }
+                else{
+                    response[i].hideFromType=false;
+                }
+            }
+        }
+        else if(value==="Trainings"){//Trainings
+            for(let i =0;i<response.length;i++){
+                if(response[i].session!=="Training"){
+                    response[i].hideFromType=true;
+                }
+                else{
+                    response[i].hideFromType=false;
+                }
+            }
+        }
+        else{//All
+            for(let i =0;i<response.length;i++){
+                response[i].hideFromType=false;
+            }
         }
         if(this.state.day===2){
             this.setState({
@@ -185,7 +280,73 @@ class Home extends Component {
                 response_day1:response
             });
         }
+        this.setState({valueType:value});
     }
+    handleChangeTrack= (event, index, value)=>{
+        var response=this.state.response_day1;
+        if(this.state.day===2){
+            response=this.state.response_day2;
+        }
+        if(value ==="All Tracks"){//All
+            for(let i =0;i<response.length;i++){
+                response[i].hideFromTrack=false;
+            }
+        }
+        else{
+            for(let i =0;i<response.length;i++){
+                if(response[i].tracks.indexOf(value)===-1){
+                    response[i].hideFromTrack=true;
+                }
+                else{
+                    response[i].hideFromTrack=false;
+                }
+            }
+        }
+        if(this.state.day===2){
+            this.setState({
+                response_day2:response
+            });
+        }
+        if(this.state.day===1){
+            this.setState({
+                response_day1:response
+            });
+        }
+        this.setState({valueTrack:value});
+    }
+    handleChangeProduct= (event, index, value)=>{
+        var response=this.state.response_day1;
+        if(this.state.day===2){
+            response=this.state.response_day2;
+        }
+        if(value ==="All Products"){//All
+            for(let i =0;i<response.length;i++){
+                response[i].hideFromProduct=false;
+            }
+        }
+        else{
+            for(let i =0;i<response.length;i++){
+                if(response[i].products.indexOf(value)===-1){
+                    response[i].hideFromProduct=true;
+                }
+                else{
+                    response[i].hideFromProduct=false;
+                }
+            }
+        }
+        if(this.state.day===2){
+            this.setState({
+                response_day2:response
+            });
+        }
+        if(this.state.day===1){
+            this.setState({
+                response_day1:response
+            });
+        }
+        this.setState({valueProduct:value});
+    }
+
     render() {
         let dayClass1=classNames({
             'day-span':true,
@@ -207,108 +368,121 @@ class Home extends Component {
                 </div>
 
                 <Grid>
-                <div className="home-body">
-                    <span className="dayHead">December { this.state.day }</span>
-                    <div className="filterSection">
-                        <Row>
-                            <Col xs={12} sm={12} md={6} lg={4} >
-                                <p>All times are Indian Standard Time (UTC+05:30)</p>
-                            </Col>
-                            <Col xs={12} sm={12} md={3} lg={2} >
-                                <p className="devsite-livestream">Livestreamed</p>
-                            </Col>
-                            <Col xs={12} sm={12} md={3} lg={6} >
-                                <p style={{fontSize:17}}>Filter:</p>
-                                    <div>
-
+                    <div className="home-body">
+                        <br/>
+                        <span className="dayHead">{this.state.day} December 2017</span>
+                        <div className="filterSection">
+                            <Row>
+                                <Col xs={12} sm={12} md={6} lg={4} >
+                                    <p>All times are Indian Standard Time (UTC+05:30)</p>
+                                </Col>
+                                <Col xs={12} sm={12} md={3} lg={2} >
+                                    <p className="devsite-livestream">Livestreamed</p>
+                                </Col>
+                                <Col xs={12} sm={12} md={12} lg={12} >
+                                    <h4 className="margin-bottom-0">Filter:</h4>
+                                    <span>
                                         <SelectField
                                             floatingLabelText="Type"
-                                            style = {{width:130,marginRight:13}}
-                                            value={this.state.value}
+                                            style = {{marginRight:13}}
+                                            value={this.state.valueType}
+                                            onChange={this.handleChangeType}
                                             floatingLabelStyle={{color: 'black'}}
 
-                                        >
-                                            <MenuItem value={null} primaryText="" style={{display:'none'}} />
-                                            <MenuItem value={1} primaryText="All Types" />
-                                            <MenuItem value={2} primaryText="Sessions" />
-                                            <MenuItem value={3} primaryText="Trainings" />
-                                        </SelectField>
-                                        <SelectField
-                                            floatingLabelText="Track"
-                                            style = {{width:130,marginRight:13}}
-                                            value={this.state.value}
-                                            floatingLabelStyle={{color: 'black'}}
-                                        >
-                                            <MenuItem value={1} primaryText="All Tracks" />
-                                            <MenuItem value={2} primaryText="Android" />
-                                            <MenuItem value={3} primaryText="Beyond Mobile" />
-                                            <MenuItem value={4} primaryText="Certification" />
-                                            <MenuItem value={5} primaryText="Develop on mobile" />
-                                            <MenuItem value={6} primaryText="Mobile Web" />
-                                        </SelectField>
-                                        <SelectField
-                                            floatingLabelText="Product"
-                                            style = {{width:130,marginRight:13}}
-                                            value={this.state.value}
-                                            floatingLabelStyle={{color: 'black'}}
-                                            iconStyle={{color: 'black'}}
-                                        >
-                                            <MenuItem value={1} primaryText="All Product" />
-                                            <MenuItem value={2} primaryText="AMP" />
-                                            <MenuItem value={3} primaryText="Android" />
-                                        </SelectField>
-                                    </div>
-                            </Col>
-                        </Row>
-                    </div>
-                        <Paper>
-                            <Table
-                                selectable={true}
-                                className="home-table"
-                                fixedHeader={true}
-                                multiSelectable={true}
-                                onRowSelection={this.handleRowSelection}
-                        >
-                                    <TableHeader
-                                        displaySelectAll={false}
-                                        adjustForCheckbox={false}
-                                        enableSelectAll={false}
-                                        >
-                                            {/* <TableRow>
-                                                <TableHeaderColumn  className="time-col" tooltip="">Select all</TableHeaderColumn>
-                                                <TableHeaderColumn tooltip="" className="description-col"> </TableHeaderColumn>
-                                            </TableRow> */}
-                                            <TableRow>
-                                                <TableRowColumn tooltip="">
-                                                    <Checkbox
-                                                        label="&nbsp;&nbsp;Select all"
-                                                        checked={this.state.day===1?this.state.SelectAllChecked1:this.state.SelectAllChecked2}
-                                                        onCheck={(e)=>this.handleRowSelection("all")}
-                                                    />
-                                                </TableRowColumn>
-                                            </TableRow>
-                                        </TableHeader>
-                                        <TableBody
-                                            displayRowCheckbox={true}
-                                            deselectOnClickaway={false}
-                                            showRowHover={false}
-                                            stripedRows={false}
                                             >
-                                                {tableData.map( (row, index) => (
-                                                    <TableRow key={index} selected={this.state.day===1?this.state.arrSelected1.indexOf(row.id)!==-1:this.state.arrSelected2.indexOf(row.id)!==-1}>
-                                                        <TableRowColumn className="time-col">{renderHTML(row.timeColumn)}</TableRowColumn>
-                                                        <TableRowColumn className="description-col">{renderHTML(row.describeColumn)}</TableRowColumn>
-                                                    </TableRow>
-                                                ))}
-                                            </TableBody>
-                                        </Table>
-                                    </Paper>
-                                </div>
-                            </Grid>
-                            <ToolbarBottom show={this.state.showToolbarBottom} handleDownloadPdf={this.handleDownloadPdf}/>
-                        </div>
-                    );
-                }
-            }
+                                                <MenuItem value={"All Types"} primaryText="All Types" />
+                                                <MenuItem value={"Sessions"} primaryText="Sessions" />
+                                                <MenuItem value={"Trainings"} primaryText="Trainings" />
+                                            </SelectField>
+                                            <SelectField
+                                                floatingLabelText="Track"
+                                                style = {{marginRight:13}}
+                                                value={this.state.valueTrack}
+                                                onChange={this.handleChangeTrack}
+                                                floatingLabelStyle={{color: 'black'}}
+                                                >
+                                                    <MenuItem value={"All Tracks"} primaryText="All Tracks" />
+                                                    <MenuItem value={"Android"} primaryText="Android" />
+                                                    <MenuItem value={"Beyond Mobile"} primaryText="Beyond Mobile" />
+                                                    <MenuItem value={"Certification"} primaryText="Certification" />
+                                                    <MenuItem value={"Develop on mobile"} primaryText="Develop on mobile" />
+                                                    <MenuItem value={"Mobile Web"} primaryText="Mobile Web" />
+                                                </SelectField>
+                                                <SelectField
+                                                    floatingLabelText="Product"
+                                                    style = {{marginRight:13}}
+                                                    value={this.state.valueProduct}
+                                                    onChange={this.handleChangeProduct}
+                                                    floatingLabelStyle={{color: 'black'}}
+                                                    iconStyle={{color: 'black'}}
+                                                    >
+                                                        <MenuItem value={"All Products"} primaryText="All Products" />
+                                                        <MenuItem value={"AMP"} primaryText="AMP" />
+                                                        <MenuItem value={"Android"} primaryText="Android" />
+                                                        <MenuItem value={"Android Things"} primaryText="Android Things" />
+                                                        <MenuItem value={"Assistant"} primaryText="Assistant" />
+                                                        <MenuItem value={"Cloud"} primaryText="Cloud" />
+                                                        <MenuItem value={"Firebase"} primaryText="Firebase" />
+                                                        <MenuItem value={"G Suite"} primaryText="G Suite" />
+                                                        <MenuItem value={"Mobile Web"} primaryText="Mobile Web" />
+                                                        <MenuItem value={"PWA"} primaryText="PWA" />
+                                                        <MenuItem value={"Play"} primaryText="Play" />
+                                                        <MenuItem value={"TensorFlow"} primaryText="TensorFlow" />
+                                                    </SelectField>
+                                                </span>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                    <Paper>
+                                        <Table
+                                            selectable={true}
+                                            className="home-table"
+                                            fixedHeader={true}
+                                            multiSelectable={true}
+                                            onRowSelection={this.handleRowSelection}
+                                            >
+                                                <TableHeader
+                                                    displaySelectAll={false}
+                                                    adjustForCheckbox={false}
+                                                    enableSelectAll={false}
+                                                    >
+                                                        <TableRow>
+                                                            <TableRowColumn tooltip="">
+                                                                <Checkbox
+                                                                    label="&nbsp;&nbsp;Select all"
+                                                                    checked={this.state.day===1?this.state.SelectAllChecked1:this.state.SelectAllChecked2}
+                                                                    onCheck={(e)=>this.handleRowSelection("all")}
+                                                                />
+                                                            </TableRowColumn>
+                                                        </TableRow>
+                                                    </TableHeader>
+                                                    <TableBody
+                                                        displayRowCheckbox={true}
+                                                        deselectOnClickaway={false}
+                                                        showRowHover={false}
+                                                        stripedRows={false}
+                                                        >
+                                                            {tableData.map( (row, index) => {
+                                                                if(row.hideFromType||row.hideFromTrack||row.hideFromProduct)
+                                                                return null;
+                                                                else
+                                                                return (
+                                                                    <TableRow key={index} selected={this.state.day===1?this.state.arrSelected1.indexOf(row.id)!==-1:this.state.arrSelected2.indexOf(row.id)!==-1}>
+                                                                        <TableRowColumn className="time-col">{renderHTML(row.timeColumn)}</TableRowColumn>
+                                                                        <TableRowColumn className="description-col">{renderHTML(row.describeColumn)}</TableRowColumn>
+                                                                    </TableRow>
+                                                                )}
+                                                            )}
+                                                        </TableBody>
+                                                    </Table>
+                                                </Paper>
+                                            </div>
+                                        </Grid>
+                                        <br/><br/><br/><br/>
+                                        <ToolbarBottom countSessions={this.state.day===1?this.state.countSessions1:this.state.countSessions2} countTrainings={this.state.day===1?this.state.countTrainings1:this.state.countTrainings2} show={this.state.showToolbarBottom} handleDownloadPdf={this.handleDownloadPdf}/>
+                                    </div>
+                                );
+                            }
+                        }
 
-            export default Home;
+                        export default Home;
