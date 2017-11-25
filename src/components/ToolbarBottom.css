@@ -12,3 +12,9 @@
 .toolbar-show{
     /*bottom: 0px;*/
 }
+
+@media (max-width:769px){
+    .attendingInfo{
+        display: none !important;
+    }
+}

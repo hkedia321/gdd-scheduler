@@ -18,15 +18,14 @@ class Header extends Component {
     }
 
     render() {
-        let title= "Gdd-Scheduler";
+        let title= "Google Developers Day India - Scheduler";
         let topnav = true;
         return (
             <div>
                 <Helmet>
-                    <meta name="description" content="Gdd scheduler" />
+                    <meta name="description" content="Google Developers Day Scheduler - Select the sessions you want to attend and save a pdf!" />
                     <meta property="og:type" content="Gdd" />
                     <meta charset="utf-8" />
-                    <meta name="author" content="Harshit Kedia" />
                     <meta property="og:type" content="website" />
                     <meta itemprop="image" content={mainlogo} />
 
@@ -37,11 +36,12 @@ class Header extends Component {
 
                 </Helmet>
                 <div className="navbar">
+                    <a href="/">
                     <p className="navPara">
                         <img src={mainlogo} style={{width:40}}></img>
-                        <span className="navText"> Google Developers Days </span>
-
+                        <span className="navText" style={{textDecoration:"none"}}> Google Developers Days </span>
                     </p>
+                </a>
                 </div>
             </div>
         );
