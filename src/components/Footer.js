@@ -14,7 +14,22 @@ class Footer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="footer-wrapper">
+
+                    <Grid>
+                        <Row>
+                            <Col xs={12} sm={6} md={6} lg={3} >
+
+                            </Col>
+                            <Col xs={12} sm={6} md={6} lg={3} >
+                            </Col>
+                            <Col xs={12} sm={6} md={6} lg={3} >
+                            </Col>
+                            <Col xs={12} sm={6} md={6} lg={3} >
+                            </Col>
+                        </Row>
+                    </Grid>
+
             </div>
         );
     }

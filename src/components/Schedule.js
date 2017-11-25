@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import {
     Route
 } from 'react-router-dom';
-import {Grid, Col, Row} from 'react-flexbox-grid';
+import { Grid, Col, Row } from 'react-flexbox-grid';
 import Footer from './Footer';
+import Header from './Header';
 import classNames from 'classnames';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import renderHTML from 'react-render-html';
 
 import axios from 'axios';
@@ -22,6 +23,8 @@ import Paper from 'material-ui/Paper';
 import Checkbox from 'material-ui/Checkbox';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
 import responseDay2 from './response-day2.json';
 import responseDay1 from './response-day1.json';
 import ToolbarBottom from './ToolbarBottom.js';
@@ -37,6 +40,7 @@ class Home extends Component {
             arrSelected2:[],
             SelectAllChecked1:false,
             SelectAllChecked2:false,
+            value:null,
         }
     }
     handleDayChange = (day) =>{
@@ -196,12 +200,67 @@ class Home extends Component {
         tableData=this.state.response_day2;
         return (
             <div>
+                <Header />
                 <div className="days-nav-div">
-                    <span className={dayClass1} onClick={()=>this.handleDayChange(1)}>DAY 1</span>
-                    <span className={dayClass2} onClick={()=>this.handleDayChange(2)}>DAY 2</span>
+                    <span className={dayClass1} onClick={()=>this.handleDayChange(1)}><span className="borderSpan">DAY 1</span></span>
+                    <span className={dayClass2} onClick={()=>this.handleDayChange(2)}><span className="borderSpan">DAY 2</span></span>
                 </div>
+
                 <Grid>
-                    <div className="home-body">
+                <div className="home-body">
+                    <span className="dayHead">December { this.state.day }</span>
+                    <div className="filterSection">
+                        <Row>
+                            <Col xs={12} sm={12} md={6} lg={4} >
+                                <p>All times are Indian Standard Time (UTC+05:30)</p>
+                            </Col>
+                            <Col xs={12} sm={12} md={3} lg={2} >
+                                <p className="devsite-livestream">Livestreamed</p>
+                            </Col>
+                            <Col xs={12} sm={12} md={3} lg={6} >
+                                <p style={{fontSize:17}}>Filter:</p>
+                                    <div>
+
+                                        <SelectField
+                                            floatingLabelText="Type"
+                                            style = {{width:130,marginRight:13}}
+                                            value={this.state.value}
+                                            floatingLabelStyle={{color: 'black'}}
+
+                                        >
+                                            <MenuItem value={null} primaryText="" style={{display:'none'}} />
+                                            <MenuItem value={1} primaryText="All Types" />
+                                            <MenuItem value={2} primaryText="Sessions" />
+                                            <MenuItem value={3} primaryText="Trainings" />
+                                        </SelectField>
+                                        <SelectField
+                                            floatingLabelText="Track"
+                                            style = {{width:130,marginRight:13}}
+                                            value={this.state.value}
+                                            floatingLabelStyle={{color: 'black'}}
+                                        >
+                                            <MenuItem value={1} primaryText="All Tracks" />
+                                            <MenuItem value={2} primaryText="Android" />
+                                            <MenuItem value={3} primaryText="Beyond Mobile" />
+                                            <MenuItem value={4} primaryText="Certification" />
+                                            <MenuItem value={5} primaryText="Develop on mobile" />
+                                            <MenuItem value={6} primaryText="Mobile Web" />
+                                        </SelectField>
+                                        <SelectField
+                                            floatingLabelText="Product"
+                                            style = {{width:130,marginRight:13}}
+                                            value={this.state.value}
+                                            floatingLabelStyle={{color: 'black'}}
+                                            iconStyle={{color: 'black'}}
+                                        >
+                                            <MenuItem value={1} primaryText="All Product" />
+                                            <MenuItem value={2} primaryText="AMP" />
+                                            <MenuItem value={3} primaryText="Android" />
+                                        </SelectField>
+                                    </div>
+                            </Col>
+                        </Row>
+                    </div>
                         <Paper>
                             <Table
                                 selectable={true}
@@ -209,7 +268,7 @@ class Home extends Component {
                                 fixedHeader={true}
                                 multiSelectable={true}
                                 onRowSelection={this.handleRowSelection}
-                                >
+                        >
                                     <TableHeader
                                         displaySelectAll={false}
                                         adjustForCheckbox={false}
