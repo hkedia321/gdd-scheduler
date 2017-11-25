@@ -19,7 +19,7 @@
 .day-span{
     vertical-align: middle;
     cursor: pointer;
-    padding:0 15px;
+    /*padding:0 15px;*/
     height: 100%;
     position: relative;
     text-align: center;
@@ -31,11 +31,14 @@
 }
 .day-span.is-active:after{
     content: "";
-    width: 50px;
-    display: block;;
+    width: 100%;
+    display: block;
     position: absolute;
-    bottom: 0px;
-    border-bottom: 2px solid #fff;
+    bottom: -15px;
+    border-bottom: 2px solid white;
+}
+.borderSpan{
+    padding: 0 15px;
 }
 .time-col{
     width:10%;
@@ -62,3 +65,45 @@ overflow: auto;
         padding:10px 40px;
     }
 }
+
+.filterSection{
+    margin: 10px 0;
+    background-color: white;
+    padding: 12px;
+    font-size: 14px;
+}
+.navText{
+    position: relative;
+    bottom: 12px;
+    margin-left: 15px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.54);
+}
+.navText:hover , .dayHead:hover{
+    color: #000;
+}
+.navPara{
+    margin:0 20px;
+}
+.navbar{
+    background-color: white;
+}
+.dayHead{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
