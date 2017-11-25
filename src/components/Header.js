@@ -13,8 +13,17 @@ class Home extends Component {
     }
 
     render() {
+        let title= "Gdd-Scheduler";
         return (
             <div>
+                <Helmet
+                    title={title}
+                    meta={[
+                        {property: 'og:title', content: title},
+                        {name: 'description', content: 'GDD-INDIA scheduler'}
+                    ]}
+                />
+
             </div>
         );
     }

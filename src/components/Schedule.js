@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {
     Route
 } from 'react-router-dom';
-import {Grid, Col, Row} from 'react-flexbox-grid';
+import { Grid, Col, Row } from 'react-flexbox-grid';
 import Footer from './Footer';
 import classNames from 'classnames';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import renderHTML from 'react-render-html';
 
 import axios from 'axios';
