@@ -62,9 +62,6 @@ class Home extends Component {
             'day-span':true,
             'is-active':this.state.day===2
         });
-        let day1Table=this.state.response_day1.map((ele)=>{
-            let html="<"
-        })
         let tableData=this.state.response_day1;
         if(this.state.day===2)
         tableData=this.state.response_day2;
