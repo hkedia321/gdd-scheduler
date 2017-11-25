@@ -5,7 +5,7 @@
     white-space: normal;
 }
 .home-table{
-    min-width: 700px;
+    min-width: 400px;
 }
 .days-nav-div{
     background-color: #4285f4;
@@ -38,12 +38,16 @@
     border-bottom: 2px solid #fff;
 }
 .time-col{
-    width:10%;
+    width:20%;
+    min-width: 300px;
     color: #757575;
     padding: 0 !important;
 }
 .description-col{
 overflow: auto;
+}
+.description-col p {
+    margin: 8px 0;
 }
 .devsite-event-type {
     border: 1px solid #e0e0e0;
@@ -60,5 +64,8 @@ overflow: auto;
 @media (min-width:769px) {
     .home-body{
         padding:10px 40px;
+    }
+    .time-col{
+        width: 10%;
     }
 }

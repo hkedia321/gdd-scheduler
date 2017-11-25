@@ -1,0 +1,14 @@
+.toolbar-div{
+    position: fixed;
+    transition: all 0.5s ease-in;
+    left:0px;
+    display: block;
+    width:100%;
+    bottom: 0px;
+}
+.toolbar-hide{
+    /*bottom: -100px;*/
+}
+.toolbar-show{
+    /*bottom: 0px;*/
+}
