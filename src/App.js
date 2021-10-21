@@ -17,8 +17,8 @@ class App extends Component {
     console.log("hideMessage");
 }
   render() {
-    var snackbarOpen=false;
-    var snackbarMessage="";
+    let snackbarOpen=false;
+    let snackbarMessage="";
     if(typeof this.props.message.payload !=='undefined' && this.props.message.payload.show==true){
       snackbarOpen=this.props.message.payload.show
       snackbarMessage = this.props.message.payload.message;
