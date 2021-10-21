@@ -18,8 +18,8 @@ class Header extends Component {
     }
 
     render() {
-        let title= "Google Developers Day India - Scheduler";
-        let topnav = true;
+        const title= "Google Developers Day India - Scheduler";
+        const topnav = true;
         return (
             <div>
                 <Helmet>
