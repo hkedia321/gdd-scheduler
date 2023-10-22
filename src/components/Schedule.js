@@ -64,6 +64,7 @@ class Home extends Component {
             }
             response_day2.push(obj);
         }
+        
         var response_day1=[];
         for(var i=1;i<responseDay1.length;i++){
             var ele=responseDay1[i];
