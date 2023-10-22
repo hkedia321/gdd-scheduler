@@ -3,12 +3,12 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {SHOW_MESSAGE} from './types';
 
-export function hideMessage(){
+export function hideMessage() {
   return function(dispatch){
     dispatch({type:SHOW_MESSAGE,payload:{show:false,message:""}});
   }
 }
-export function showMessage(str){
+export function showMessage(str) {
   return function(dispatch){
     dispatch({type:SHOW_MESSAGE,payload:{show:true,message:str}});
   }
