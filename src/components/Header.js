@@ -9,9 +9,7 @@ import './Schedule.css';
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state={
-
-        }
+        this.state={}
     }
     myFunction = () => {
         let x = this.refs.myTopnav;
