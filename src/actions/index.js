@@ -23,9 +23,7 @@ export function postRequest(url,values,type="entry",errMessage="Error! Email or 
       dispatch({type:SHOW_MESSAGE,payload:{show:true,message:errMessage}});
       console.log("error response");
       console.log(error);
-
     });
-
   }
 }
 
