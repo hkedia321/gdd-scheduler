@@ -28,7 +28,6 @@ class ToolbarBottom extends Component {
             <div className={this.props.show?"toolbar-show toolbar-div":"toolbar-hide toolbar-div"}>
                 <Toolbar style={styles.toolbar}>
                     <ToolbarGroup>
-
                             <img src="/images/gdd-logo.svg" className="attendingInfo" alt=""/>
                             &nbsp;&nbsp;
                             <ToolbarTitle text="GDD Scheduler" className="attendingInfo" style={{color:"#fff"}}/>
