@@ -14,7 +14,7 @@ class App extends Component {
 
   closeSnackbar=()=>{
     this.props.hideMessage();
-}
+  }
   render() {
     let snackbarOpen=false;
     let snackbarMessage="";
