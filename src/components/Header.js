@@ -28,8 +28,6 @@ class Header extends Component {
                     <meta charset="utf-8" />
                     <meta property="og:type" content="website" />
                     <meta itemprop="image" content={mainlogo} />
-
-
                     <title>{title}</title>
                     <link rel="shortcut icon" href="https://developers.google.com/_static/2f20c0c6d8/images/favicon.png">
                     </link>
