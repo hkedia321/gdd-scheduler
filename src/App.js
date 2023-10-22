@@ -31,7 +31,7 @@ class App extends Component {
           onRequestClose={()=>this.closeSnackbar()}
         />
         <Route exact path='/schedule' component={Schedule}/>
-          <Route exact path='/' component={Schedule}/>
+        <Route exact path='/' component={Schedule}/>
       </div>
     );
   }
