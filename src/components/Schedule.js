@@ -40,9 +40,11 @@ class Home extends Component {
             pdfLink:"",
         }
     }
+
     handleDayChange = (day) =>{
         this.setState({day});
     }
+    
     componentWillMount(){
         var response_day2=[];
         for(var i=1;i<responseDay2.length;i++){
