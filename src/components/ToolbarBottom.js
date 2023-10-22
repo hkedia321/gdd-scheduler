@@ -24,6 +24,7 @@ class ToolbarBottom extends Component {
                 backgroundColor:"#ccc",
             }
         }
+        
         return (
             <div className={this.props.show?"toolbar-show toolbar-div":"toolbar-hide toolbar-div"}>
                 <Toolbar style={styles.toolbar}>
